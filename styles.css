@@ -1,0 +1,264 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .h-screen {
+    height: 100vh;
+  }
+  
+  .bg-yellow-50 {
+    background-color: #fffbea;
+  }
+  
+  .overflow-auto {
+    overflow: auto;
+  }
+  
+  .p-8 {
+    padding: 2rem;
+  }
+  
+  .dashboard-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #B58900;
+  }
+  
+  /* Cards */
+  .card {
+    background-color: #ffefc3;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .welcome-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Grid Layout */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .balance-card, .expenses-card {
+    background-color: #ffd966;
+    text-align: center;
+  }
+  
+  #balance, #todayExpenses {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .transactions-card ul {
+    list-style: none;
+  }
+  
+  .transactions-card ul li {
+    border-bottom: 1px solid #ffd966;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 16rem;
+    background-color: #f4d03f;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .sidebar button {
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar button i {
+    margin-right: 0.5rem;
+  }
+  
+  .sidebar button:hover {
+    background-color: #ffd966;
+  }
+  
+  /* User Icon */
+  .user-icon {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+  
+  .avatar-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background: none;
+    border: none;
+  }
+  
+  .avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .hover-card {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    display: none;
+  }
+  
+  .avatar-btn:hover + .hover-card {
+    display: block;
+  }
+  
+  /* Forms */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-bottom: 0.5rem;
+    color: #b58900;
+  }
+  
+  form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    background-color: #f4a900;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  form button:hover {
+    background-color: #e38d00;
+  }
+  
+  /* Responsive Design */
+  
+  /* Mobile First Approach */
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .sidebar {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 0.5rem;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      background-color: #f4d03f;
+    }
+  
+    .sidebar button {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+  
+    .sidebar button i {
+      margin-right: 0;
+    }
+  
+    .p-8 {
+      padding: 1rem;
+    }
+  
+    .dashboard-title {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .user-icon {
+      top: 0.5rem;
+      left: 0.5rem;
+    }
+  
+    .hover-card {
+      width: auto;
+      right: 0.5rem;
+    }
+  }
+  
+  /* Tablet Layout */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .sidebar {
+      width: 12rem;
+      padding: 0.5rem;
+    }
+  
+    .sidebar button {
+      padding: 0.8rem;
+      font-size: 0.9rem;
+    }
+  
+    .sidebar button i {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Desktop Layout */
+  @media (min-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .sidebar {
+      width: 16rem;
+    }
+  
+    .sidebar button {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+  }
+  
