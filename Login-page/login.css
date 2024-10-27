@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    background-color: #ffd700;
+    background-image: 
+        linear-gradient(30deg, #ffeb3b 12%, transparent 12.5%, transparent 87%, #ffeb3b 87.5%, #ffeb3b),
+        linear-gradient(150deg, #ffeb3b 12%, transparent 12.5%, transparent 87%, #ffeb3b 87.5%, #ffeb3b),
+        linear-gradient(30deg, #ffeb3b 12%, transparent 12.5%, transparent 87%, #ffeb3b 87.5%, #ffeb3b),
+        linear-gradient(150deg, #ffeb3b 12%, transparent 12.5%, transparent 87%, #ffeb3b 87.5%, #ffeb3b),
+        linear-gradient(60deg, #fff59d 25%, transparent 25.5%, transparent 75%, #fff59d 75%, #fff59d);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0;
+    animation: slidePattern 60s linear infinite;
+}
+
+@keyframes slidePattern {
+    from {
+        background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0;
+    }
+    to {
+        background-position: 80px 140px, 80px 140px, 120px 210px, 120px 210px, 80px 140px;
+    }
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.95); /* Added some opacity */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15); /* Enhanced shadow */
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(5px); /* Added blur effect for better contrast */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333; /* Added color for better readability */
+}
+
+.form-control {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000000; /* Changed link color to match theme */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover {
+    color: #ff9800; /* Darker shade on hover */
+}
+
+@media (max-width: 576px) {
+    .form-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}

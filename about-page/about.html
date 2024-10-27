@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About WSPEND - Wise Spend</title>
+    <link rel="stylesheet" href="about.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">s
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>WSPEND</h1>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- <a class="navbar-brand" href="../">WSPEND</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Dashboard/dashboard.html">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../about-page/about.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section class="text-center mb-5">
+            <h1 class="display-4 mb-3">About WSPEND</h1>
+            <p class="lead">Empowering individuals to make wise financial decisions since 2022.</p>
+        </section>
+
+        <section class="row mb-5">
+            <div class="col-md-6">
+                <h2>Our Mission</h2>
+                <p>At WSPEND, we believe that financial freedom is achievable for everyone. Our mission is to provide intuitive and powerful tools that empower individuals to take control of their finances, make informed decisions, and achieve their financial goals.</p>
+            </div>
+            <div class="col-md-6">
+                <h2>Our Vision</h2>
+                <p>We envision a world where financial stress is minimized, and people can focus on what truly matters in life. By simplifying expense tracking and budgeting, we aim to create a society that is more financially literate and secure.</p>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Our Journey</h2>
+            <div class="slider">
+                <div class="slider-wrapper">
+                    <div class="timeline-item active">
+                        <h3>2020: The Beginning</h3>
+                        <p>WSPEND was founded by a group of finance professionals and tech enthusiasts who recognized the need for a more user-friendly budgeting tool.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2021: Rapid Growth</h3>
+                        <p>We expanded our user base to over 100,000 active users and introduced our mobile app for iOS and Android.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2022: New Features</h3>
+                        <p>Launched advanced analytics and AI-powered insights to help users make even smarter financial decisions.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2023: Global Expansion</h3>
+                        <p>WSPEND became available in 20+ countries, supporting multiple currencies and local financial regulations.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2024: Looking Ahead</h3>
+                        <p>We continue to innovate and improve our platform, with exciting new features on the horizon.</p>
+                    </div>
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="row mb-5">
+            <h2 class="text-center mb-4">Meet Our Team</h2>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/placeholder.svg?height=200&width=200" class="card-img-top" alt="Jane Doe">
+                    <div class="card-body">
+                        <h5 class="card-title">Jane Doe</h5>
+                        <p class="card-text">Co-founder & CEO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/placeholder.svg?height=200&width=200" class="card-img-top" alt="John Smith">
+                    <div class="card-body">
+                        <h5 class="card-title">John Smith</h5>
+                        <p class="card-text">Co-founder & CTO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="/placeholder.svg?height=200&width=200" class="card-img-top" alt="Emily Brown">
+                    <div class="card-body">
+                        <h5 class="card-title">Emily Brown</h5>
+                        <p class="card-text">Head of Product</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center mb-5">
+            <h2 class="mb-4">Join Us in Our Mission</h2>
+            <p class="lead mb-4">Be part of the financial revolution. Start your journey to financial freedom today with WSPEND.</p>
+            <a href="#" class="btn btn-primary btn-lg">Get Started Now</a>
+        </section>
+    </main>
+
+    <footer class="py-4 text-center">
+        <p>&copy; 2024 WSPEND. All rights reserved.</p>
+        <nav>
+            <a href="#" class="text-dark mx-2">Terms of Service</a> |
+            <a href="#" class="text-dark mx-2">Privacy Policy</a>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="about.js"></script>
+</body>
+</html>
