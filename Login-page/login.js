@@ -69,6 +69,7 @@ $(document).ready(function() {
         if (user) {
             localStorage.setItem('loggedInUser ', username);
             showWelcomePage(username);
+            
         } else {
             $('#loginAlert').show();
             setTimeout(() => $('#loginAlert').hide(), 3000);
@@ -80,6 +81,11 @@ $(document).ready(function() {
         $('.form-container').hide();
         $('#welcomePage').show();
         $('#welcomeUsername').text(username);
+        $('#loginAlert').removeClass('alert-danger').addClass('alert-success').text("You will be directed to the app").show();
+        
+            setTimeout(() => {
+                window.location.href = '../Wspend-app/index.html';
+            }, 2000);
     }
 
     // Logout
