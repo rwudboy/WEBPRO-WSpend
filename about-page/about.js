@@ -15,13 +15,12 @@ function changeSlide(direction) {
     currentSlide += direction;
 
     if (currentSlide < 0) {
-        currentSlide = slides.length - 1; // Go to the last slide
+        currentSlide = slides.length - 1; 
     } else if (currentSlide >= slides.length) {
-        currentSlide = 0; // Go to the first slide
+        currentSlide = 0; 
     }
 
     showSlide(currentSlide);
 }
 
-// Initialize the first slide
 showSlide(currentSlide);
