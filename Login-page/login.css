@@ -29,19 +29,19 @@ body {
 }
 
 .form-container {
-    background-color: rgba(255, 255, 255, 0.95); /* Added some opacity */
+    background-color: rgba(255, 255, 255, 0.95);  
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.15); /* Enhanced shadow */
+    box-shadow: 0 0 20px rgba(0,0,0,0.15); 
     width: 100%;
     max-width: 400px;
-    backdrop-filter: blur(5px); /* Added blur effect for better contrast */
+    backdrop-filter: blur(5px); 
 }
 
 h2 {
     text-align: center;
     margin-bottom: 1.5rem;
-    color: #333; /* Added color for better readability */
+    color: #333; 
 }
 
 .form-control {
@@ -50,12 +50,12 @@ h2 {
 
 a {
     text-decoration: none;
-    color: #000000; /* Changed link color to match theme */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
+    color: #000000;  
+    transition: color 0.3s ease; 
 }
 
 a:hover {
-    color: #ff9800; /* Darker shade on hover */
+    color: #ff9800; 
 }
 
 @media (max-width: 576px) {

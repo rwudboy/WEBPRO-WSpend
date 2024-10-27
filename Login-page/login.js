@@ -69,6 +69,11 @@ $(document).ready(function() {
         if (user) {
             localStorage.setItem('loggedInUser ', username);
             showWelcomePage(username);
+            $('#loginAlert').removeClass('alert-danger').addClass('alert-success').text("You will be directed to the app").show();
+        
+            setTimeout(() => {
+                window.location.href = '../Wspend-app/index.html';
+            }, 2000);
             
         } else {
             $('#loginAlert').show();
@@ -81,11 +86,6 @@ $(document).ready(function() {
         $('.form-container').hide();
         $('#welcomePage').show();
         $('#welcomeUsername').text(username);
-        $('#loginAlert').removeClass('alert-danger').addClass('alert-success').text("You will be directed to the app").show();
-        
-            setTimeout(() => {
-                window.location.href = '../Wspend-app/index.html';
-            }, 2000);
     }
 
     // Logout

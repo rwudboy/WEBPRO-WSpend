@@ -28,6 +28,15 @@ $(document).ready(function() {
       alert("Deposit added!");
       $(this).trigger("reset");
     });
+
+    $('#logoutBtn').on('click', function() {
+      // Clear stored user data
+      localStorage.removeItem('loggedInUser'); // Remove stored user data
+      sessionStorage.clear();                  // Optional: Clear all session storage data
+
+      // Redirect to the login page
+      window.location.href = '../Login-page/login.html';
+    });
   
     // Log expense
     $("#add-expense-form").submit(function(e) {
